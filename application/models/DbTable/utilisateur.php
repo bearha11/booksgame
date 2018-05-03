@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 /**
  * Classe ORM qui représente la table 'flux_doc'.
@@ -56,4 +57,11 @@ class Model_DbTable_utilisateur extends Zend_Db_Table_Abstract
     }
     
     
+=======
+<?php
+class Application_Model_DbTable_Utilisateurs extends Zend_Db_Table_Abstract
+{
+    /** Table name */
+    protected $_name    = 'utilisateurs';
+>>>>>>> f5fe1065335f49edb45509d2127c00fa932424c0
 }

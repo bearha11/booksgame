@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
  
 class TestController extends Zend_Controller_Action
 {
@@ -20,4 +21,22 @@ class TestController extends Zend_Controller_Action
     
 }
 ?>
+=======
+
+class utilisateursController extends Zend_Controller_Action
+{
+
+    public function init()
+    {
+        /* Initialize action controller here */
+    }
+
+    public function utilisateursAction()
+    {
+        // action body
+    }
+
+
+}
+>>>>>>> f5fe1065335f49edb45509d2127c00fa932424c0
 
