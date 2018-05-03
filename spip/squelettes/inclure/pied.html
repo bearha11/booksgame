@@ -1,0 +1,30 @@
+<div class="footer-w3copy w3-agileits">
+		<p>© 2017 Edify. All Rights Reserved | Design by <a href="https://w3layouts.com/" target="_blank">w3layouts</a></p>
+	</div>
+	<!-- //footer -->    
+	<!-- banner Slider starts Here -->
+	<script src="js/responsiveslides.min.js"></script>
+	<script>
+		// You can also use "$(window).load(function() {"
+		$(function () {
+		  // Slideshow 3
+		  $("#slider3").responsiveSlides({
+			auto:false,
+			pager: true,
+			nav: false,
+			speed: 500,
+			namespace: "callbacks",
+			before: function () {
+			  $('.events').append("<li>before event fired.</li>");
+			},
+			after: function () {
+			  $('.events').append("<li>after event fired.</li>");
+			}
+		  });
+	
+		});
+	</script>
+	<!-- //End-slider-script -->
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>

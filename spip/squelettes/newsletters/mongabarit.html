@@ -1,0 +1,29 @@
+<BOUCLE_rem(CONDITION){si #REM}>
+<!-- titre=Mon gabarit à moi -->
+</BOUCLE_rem>
+
+<BOUCLE_newsletter(NEWSLETTERS){id_newsletter}{statut?}>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>#TITRE</title>
+		#TEXTE
+	</head>
+	<body>
+	<h1>Hello World !</h1>
+	</body>
+</html>
+</BOUCLE_newsletter>
+#FILTRE{newsletters_liens_absolus}
+<ul>
+<BOUCLE_selectionarticles(ARTICLES){id_newsletter}>
+<li><a href="#URL_ARTICLE">#TITRE</a>
+</BOUCLE_selectionarticles>
+</ul>
+ 
+<ul>
+<BOUCLE_selectionrubriques(RUBRIQUES){id_newsletter}>
+<li><a href="#URL_RUBRIQUE">#TITRE</a>
+</BOUCLE_selectionrubriques>
+</ul>
