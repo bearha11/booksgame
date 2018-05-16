@@ -2,15 +2,16 @@
 <html lang="en" >
 
 <head>
+<meta name="viewport" content="width=device-width, user-scalable=yes" />
   <meta charset="UTF-8">
   <title>Login </title>
   
   
-  <link rel='stylesheet prefetch' href='https://www.google.com/fonts#UsePlace:use/Collection:Roboto:400,300,100,500'>
+<link rel='stylesheet prefetch' href='https://www.google.com/fonts#UsePlace:use/Collection:Roboto:400,300,100,500'>
 <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css'>
 <link rel='stylesheet prefetch' href='https://www.google.com/fonts#UsePlace:use/Collection:Roboto+Slab:400,700,300,100'>
 
-      <link rel="stylesheet" href="css/style - Copie.css">
+      <link rel="stylesheet" href="css/style-Copie.css">
 
   
 </head>
@@ -21,7 +22,7 @@
 <div id="dialog" class="dialog dialog-effect-in">
   <div class="dialog-front">
     <div class="dialog-content">
-      <form class="dialog-form" action="" method="POST">
+      <form class="dialog-form" action="personnaliser_profil.html" method="POST">
         <fieldset>
           <legend> <img src="BooksGame_logo.jpg" alt="Smiley face"> </legend>
           <div class="form-group">
@@ -48,16 +49,20 @@
   </div>
   <div class="dialog-back">
     <div class="dialog-content">
-      <form id="register_form" class="dialog-form" action="" method="POST">
+      <form class="dialog-form" action="personnaliser_profil.html" method="POST">
         <fieldset>
           <legend>Books'game</legend>
           <div class="form-group">
-            <label for="nom_util" class="control-label">Utilisateur:</label>
-            <input type="text" id="nom_util" class="form-control" name="nom_util"/> 
+            <label for="user_username" class="control-label">Utilisateur:</label>
+            <input type="text" id="user_username" class="form-control" name="user_username"/> 
+          </div>
+		  <div class="form-group">
+            <label for="user_username" class="control-label">email:</label>
+            <input type="text" id="user_email" class="form-control" name="user_email"/> 
           </div>
           <div class="form-group">
-            <label for="password" class="control-label">Mot de passe:</label>
-            <input type="password" id="password" class="form-control" name="password"/>
+            <label for="user_password" class="control-label">Mot de passe:</label>
+            <input type="password" id="user_password" class="form-control" name="user_password"/>
           </div>
           <div class="form-group">
             <label for="user_cnf_password" class="control-label">confirmer votre mots de passe:</label>
@@ -71,11 +76,11 @@
               </label>
             </div>
           </div>
-          <div class="pad-btm-20">
-            <input type="submit" class="btn btn-default btn-block btn-lg" value="Continuer"/>
+          <div class="pad-btm-20" >
+            <input type="submit"  class="btn btn-default btn-block btn-lg" value="Continuer"/>
           </div>
           <div class="text-center">
-            <p>Retour à  <a href="#" class="link user-actions"><strong> la page de connexion</strong></a>?</p>
+            <p>Retour à  <a href="" class="link user-actions"><strong> la page de connexion</strong></a>?</p>
           </div>
         </fieldset>
       </form>
