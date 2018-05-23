@@ -1,6 +1,7 @@
 <html>
 
 	<head>
+	<link rel="manifest" href="manifest.json">
 	<meta name="viewport" content="width=device-width, user-scalable=yes" />
 	  <meta charset="UTF-8">
 	  
@@ -25,14 +26,32 @@
 	<div id="dialog" class="dialog dialog-effect-in">
   <div class="dialog-front">
     <div class="dialog-content">
-      <form class="dialog-form" action="" method="POST">
+      <form class="dialog-form" action="commencer_partie.html" method="POST">
         <fieldset>
           <legend> <img src="BooksGame_logo.jpg" alt="Smiley face"> </legend>
 		  
-		  
+		  <label> Voici la liste des personne connecter </label>
 		
 		  
-		<a href="theme.html" class="button">Commencez la partie </a>
+		<a href="commencer_partie.html" class="button">suivant </a>
 		  
+		  <!-- Then Material JavaScript -->
+   
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('sw.js').then(function(registration) {
+                    // Registration was successful
+                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                }, function(err) {
+                    // registration failed :(
+                    console.log('ServiceWorker registration failed: ', err);
+                });
+            });
+        }
+    </script>
 		  </body>
+		  
+		  
+		  
 </html>

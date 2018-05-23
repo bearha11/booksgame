@@ -1,5 +1,6 @@
 <html>
 	<head>
+	<link rel="manifest" href="manifest.json">
 	<meta name="viewport" content="width=device-width, user-scalable=yes" />
 	  <meta charset="UTF-8">
 	  
@@ -36,6 +37,21 @@
 	</div>
 	 </center>
 
-</body>
+<!-- Then Material JavaScript -->
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('sw.js').then(function(registration) {
+                    // Registration was successful
+                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                }, function(err) {
+                    // registration failed :(
+                    console.log('ServiceWorker registration failed: ', err);
+                });
+            });
+        }
+    </script>
+		  </body>
 
 </html>
