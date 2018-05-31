@@ -6,7 +6,7 @@ self.addEventListener( 'install', function ( event ) {
         'css/styyle.css',
         'barcode.js',
         'jquery.js',
-		'index.html',
+		'home.html',
 		'equipe.html',
 		'commencer_partie.html',
 		'theme.html' , 
