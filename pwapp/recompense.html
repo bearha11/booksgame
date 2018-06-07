@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+ <link rel="manifest" href="manifest.json"> 
+<meta name="viewport" content="width=device-width, user-scalable=yes" />
+  <meta charset="UTF-8">
+  <title>recompense </title>
+   <link rel="manifest" href="manifest.json"> 
+  
+
+<link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css'>
+
+
+      <link rel="stylesheet" href="css/style-Copie.css">
+
+  
+</head>
+
+<body>
+
+ 
+<div id="dialog" class="dialog dialog-effect-in">
+  <div class="dialog-front">
+    <div class="dialog-content">
+      <form class="dialog-form" action="" method="POST">
+        <fieldset>
+          <legend> <img src="BooksGame_logo.jpg" alt="Smiley face"> </legend>
+		  
+		  
+		  <p  align="center" > <font color="#43CCED">Equipe rouge</font></p>
+		  Book’s Game 
+youpi ! bravo l'équipe rouge vous 
+avez gagné. Présentez-vous à l’accueil
+et profitez de votre récompense.
+À bientôt .
+Equipe Book's Game
+
+
+<script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('sw.js').then(function(registration) {
+                    // Registration was successful
+                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                }, function(err) {
+                    // registration failed :(
+                    console.log('ServiceWorker registration failed: ', err);
+                });
+            });
+        }
+    </script>
+</body>
+</html>

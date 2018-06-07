@@ -1,0 +1,9 @@
+{"salle":[{"id_salle":"1","nom_salle":"salle bleu : ","theme_salle":"Philosophie, religion, sciences, technique et informatique"},
+{"id_salle":"5","nom_salle":"salle brune : ", "theme_salle":"langues, littérature étrangères"},
+{"id_salle":"6","nom_salle":"salle orange : ", "theme_salle":"langues: latin-grec, littérature française"},
+{"id_salle":"7","nom_salle":"salle rose : ", "theme_salle":"art plastique-spéctacle cinéma , musique, photo"},
+{"id_salle":"8","nom_salle":"salle rouge : ","theme_salle":"Ethno,linguistique,psycologie,sociologie"},
+{"id_salle":"9","nom_salle":"salle verte : ", "theme_salle":"droit","color":"#d33dce"},
+{"id_salle":"10","nom_salle":"salle violette : ", "theme_salle":"economie,géographie,histoire, urbanisme"}]}
+
+

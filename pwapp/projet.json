@@ -1,0 +1,28 @@
+{
+    "articles": [
+        {
+            "id": "14",
+            "bleu": "Sauver la couche d’ozone",
+            "categorie": "\nEnvironnement\n\n",
+            "description": "\nUn ramassage de déchets a été organisé dans la ville de Paris, là où les mégots, chewing-gum et autres déchets font augmenter le taux de pollution.\n\n",
+            "lieu": "\nParis\n\n",
+            "photo": "IMG/jpg/02-2.jpg"
+        },
+        {
+            "id": "15",
+            "bleu": "Redonner vie aux plantes",
+            "categorie": "\nÉcologie\n\n",
+            "description": "\nDes cours ont été mis en place pour apprendre à redonner vie à des plantes qui ont été mal entretenue.\n\n",
+            "lieu": "\nMontpellier\n\n",
+            "photo": "IMG/jpg/03-2.jpg"
+        },
+        {
+            "id": "42",
+            "bleu": "Ramassage de déchets",
+            "categorie": "\nEnvironnement\n\n",
+            "description": "\nVoici le premier projet effectué grâce à l’organisme Vayaterra. 7 personnes se sont rassemblées sur une plage aux Bahamas afin de nettoyer la plage et un bout de mer. Cela leur a permis non seulement de voyager, mais aussi de faire pour la première fois de la plongée pour certains d’entre eux et de profiter de la plage. Voici le genre de projet que la communauté de Vayaterra propose.\n\n",
+            "lieu": "\nBahamas\n\n",
+            "photo": "IMG/jpg/02_copie.jpg"
+        }
+    ]
+}

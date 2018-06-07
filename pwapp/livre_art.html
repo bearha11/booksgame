@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr" >
+
+<head>
+<link rel="manifest" href="manifest.json">
+<meta name="viewport" content="width=device-width, user-scalable=yes" />
+<meta charset="UTF-8">
+<title>Livre d'art</title>
+<link rel="manifest" href="manifest.json">
+<script src="https://d3js.org/d3.v4.min.js"></script> 
+<script  src="js/index.js"></script>
+<script src="js/jquery-3.3.1.min.js"></script> 
+  
+
+<link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css'>
+<link rel="stylesheet" href="css/style-Copie.css">
+
+  
+</head>
+
+<body>
+
+ 
+<div id="dialog" class="dialog dialog-effect-in">
+  <div class="dialog-front">
+    <div class="dialog-content">
+      <form class="dialog-form" action="" method="POST">
+        <fieldset>
+          <legend> <img src="BooksGame_logo.jpg" alt="Smiley face"> </legend>
+		  
+		  
+		  
+		  <p  align="center" > <font color="#FA58AC">Choisi ton livre </font></p>
+		   <div class = "livre" id="myDiv">
+	
+			
+		
+		   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  
+
+  <script>
+  var url="livreart.json"; 
+			d3.json(url, function(data) {
+				data.articles.forEach(function(d) {
+					var myDiv = d3.select('#myDiv');
+					myDiv.append('br');
+					var livre1 = myDiv.append('a')
+					.attr('href', 'quiz_klimt.html') ; 
+					livre1.append('font')
+					.attr('color','#FA58AC')
+					.text(function(){
+						return d.livre1 ; 
+					});
+					myDiv.append('br');
+					myDiv.append('br');
+					
+					var livre2 = myDiv.append('a')
+					.attr('href', 'quiz_klimt.html') ; 
+					livre2.append('font')
+					.attr('color','#FA58AC')
+					.text(function(){
+						return d.livre2 ; 
+					});
+					myDiv.append('br');
+					myDiv.append('br');
+					
+					
+					var livre3 = myDiv.append('a')
+					.attr('href', 'quiz_klimt.html') ; 
+					livre3.append('font')
+					.attr('color','#FA58AC')
+					.text(function(){
+						return d.livre3 ; 
+					});
+					myDiv.append('br');
+					myDiv.append('br');
+					
+					
+					
+					
+						});
+			})
+    </script>
+  
+
+    <script  src="js/index.js"></script>
+		  <!-- Then Material JavaScript -->
+ 
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('sw.js').then(function(registration) {
+                    // Registration was successful
+                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                }, function(err) {
+                    // registration failed :(
+                    console.log('ServiceWorker registration failed: ', err);
+                });
+            });
+        }
+    </script>
+	</body>
+		  
+		  </html>

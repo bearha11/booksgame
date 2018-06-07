@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="manifest" href="manifest.json">
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=yes" />
+ <meta name="theme-color" content="#6ad1ff"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>connecter</title>
+    <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase-auth.js"></script>
+</head>
+<body>
+    <div id="dialog" class="dialog dialog-effect-in">
+  <div class="dialog-front">
+    <div class="dialog-content">
+    
+        <fieldset>
+          <legend> <img src="BooksGame_logo.jpg" alt="Smiley face"> </legend>
+          <div class="form-group">
+            <button onclick="mainApp.logout();">se déconnecter</button>
+        
+
+    </div>
+	<h1>  Bienvenue dans votre profil!     </h1>
+  
+		  <p>
+       <label for="pseudo">Votre pseudo</label> : <input type="text" name="pseudo" id="pseudo" />
+   </p>
+   
+   	 
+       <label for="profession">Votre profession</label> : <input type="text" name="profession" id="profession" />
+   </p>
+		  
+		  <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="customFile">
+                                <label class="custom-file-label" for="customFile">Photo de profil</label>
+                            </div>
+
+<a href="equipe.html" class="button">suivant </a>
+
+<script src="fireBase.js"></script>
+<script src="main.js"></script>
+
+ <link rel="manifest" href="manifest.json"> 
+<link rel='stylesheet prefetch' href='https://www.google.com/fonts#UsePlace:use/Collection:Roboto:400,300,100,500'>
+<link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='https://www.google.com/fonts#UsePlace:use/Collection:Roboto+Slab:400,700,300,100'>
+
+      <link rel="stylesheet" href="css/style-Copie.css">
+
+    <script src="fireBase.js"></script>
+    <script src="main.js"></script>
+	
+	
+	<script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('sw.js').then(function(registration) {
+                    // Registration was successful
+                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                }, function(err) {
+                    // registration failed :(
+                    console.log('ServiceWorker registration failed: ', err);
+                });
+            });
+        }
+    </script>
+</body>
+</html>

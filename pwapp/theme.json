@@ -1,0 +1,18 @@
+{
+    "articles": [
+	{
+		"titre":"salle ", 
+		"recid":"69", 
+		"bleu" : "salle bleu : philosophie " ,
+		"brune": "salle brune : littérature " , 
+		"orange":"salle orange : langues", 
+		"rose": "salle rose : art plastique" , 
+		"verte":"salle verte : droit", 
+		"violette": "salle violette :exemple", 
+		"noir" : "salle noir : noir",
+		"rouge" : "salle rouge : sociologie e" 
+		
+	}
+	    ]
+}
+ 

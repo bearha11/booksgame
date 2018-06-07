@@ -1,0 +1,39 @@
+{
+    "short_name": "booksgame",
+    "name": "booksgame",
+    "icons": [ {
+        "src": "BooksGame_logo.jpg",
+        "type": "image/jpg",
+        "sizes": "512x512"
+    }, {
+        "src": "image/gustav.png",
+        "type": "image/png",
+        "sizes": "192x192"
+    }, {
+        "src": "image/info_bu2.png",
+        "type": "image/png",
+        "sizes": "192x192"
+    }, {
+        "src": "image/niveau2.png",
+        "type": "image/png",
+        "sizes": "192x192"
+    }, {
+        "src": "image/retour.png",
+        "type": "image/png",
+        "sizes": "192x192"
+		},{
+		  "src": "image/suivant.png",
+        "type": "image/png",
+        "sizes": "192x192"
+    } ],
+    "start_url": "index.html",
+    "background_color": "#6ad1ff",
+    "display": "standalone",
+    "orientation": "portrait",
+    "theme_color": "#6ad1ff",
+    "prefer_related_applications": true,
+    "related_applications": [ {
+        "platform": "play",
+        "id": "com.google.samples.apps.iosched"
+    } ]
+}

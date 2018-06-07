@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <link rel="manifest" href="manifest.json"> 
+<meta name="viewport" content="width=device-width, user-scalable=yes" />
+  <meta charset="UTF-8">
+  <title>hexagone </title>
+   <link rel="manifest" href="manifest.json"> 
+  
+
+<link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css'>
+
+
+  </head>
+  <body>
+  
+    <canvas id="stage" height="500"></canvas>
+    <script src="./dist/js/ahg.min.js"></script>
+    <script src="./javascripts/easeljs-0.7.1.min.js"></script>
+    <script src="./javascripts/stage_transformer.js"></script>
+		<a href="recompense.html" </a> <img src="image/suivant.png"> 
+    <script>
+      var element        = document.getElementById("stage");
+          element.height = window.innerHeight;
+          element.width  = window.innerWidth;
+
+      var stage   = new createjs.Stage("stage");
+          stage.x = window.innerWidth/2;
+          stage.y = window.innerHeight/2;
+
+      var grid             = new Grid();
+          grid.tileSize    = 50;
+          grid.tileSpacing = 0;
+          grid.pointyTiles = false;
+
+      var stageTransformer = new StageTransformer().initialize({
+        element: element,
+        stage: stage
+      });
+
+      stageTransformer.addEventListeners();
+
+      var coordinates = grid.hexagon(0, 0, 2, true)
+      for (var i = 0; i < coordinates.length; i++) {
+        var q = coordinates[i].q,
+            r = coordinates[i].r,
+            center = grid.getCenterXY(q, r),
+            hexagon = new createjs.Shape();
+
+        hexagon.graphics
+          .beginFill("rgba(150,150,150,1)")
+          .beginStroke("rgba(50,50,50,1)")
+          .drawPolyStar(0, 0, grid.tileSize, 6, 0, 0);
+
+        hexagon.q = q;
+        hexagon.r = r;
+        hexagon.x = center.x;
+        hexagon.y = center.y;
+
+        hexagon.addEventListener("click", function (event) {
+          if (!stageTransformer.mouse.moved) {
+            event.target.graphics
+              .clear()
+              .beginFill("rgba(150,0,0,1)")
+              .beginStroke("rgba(50,0,0,1)")
+              .drawPolyStar(0, 0, grid.tileSize, 6, 0, 0);
+          }
+        });
+
+        stage.addChild(hexagon);
+      }
+
+      var tick = function (event) {
+        stage.update();
+      };
+
+      tick();
+
+      createjs.Ticker.setFPS(30);
+      createjs.Ticker.addEventListener("tick", tick);
+	  
+    </script>
+
+	<script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('sw.js').then(function(registration) {
+                    // Registration was successful
+                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                }, function(err) {
+                    // registration failed :(
+                    console.log('ServiceWorker registration failed: ', err);
+                });
+            });
+        }
+    </script>
+	
+  </body>
+</html>

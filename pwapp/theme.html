@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+ <link rel="manifest" href="manifest.json"> 
+<meta name="viewport" content="width=device-width, user-scalable=yes" />
+  <meta charset="UTF-8">
+  <title>theme </title>
+   <link rel="manifest" href="manifest.json">
+ <script src="https://d3js.org/d3.v4.min.js"></script> 
+ <script  src="js/index.js"></script>
+	<script src="js/jquery-3.3.1.min.js"></script> 
+  
+
+<link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css'>
+
+
+      <link rel="stylesheet" href="css/style-Copie.css">
+
+  
+</head>
+
+
+<body>
+ 
+<div id="dialog" class="dialog dialog-effect-in">
+  <div class="dialog-front">
+    <div class="dialog-content">
+      <form class="dialog-form" action="" method="POST">
+        <fieldset>
+          <legend> <img src="BooksGame_logo.jpg" alt="Smiley face"> </legend>
+    
+		  
+		  <div class="salle" id="myDiv">
+		  
+		  
+		  </div>
+		  
+			<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+        <script>
+			var url="theme.json"; 
+			d3.json(url, function(data) {
+				data.articles.forEach(function(d) {
+					var myDiv = d3.select('#myDiv');
+					myDiv.append('br');
+					var bleu = myDiv.append('a')
+					.attr('href', 'salle_bleu.html') ; 
+					bleu.append('font')
+					.attr('color','#43CCED')
+					.text(function(){
+						return d.bleu ; 
+					});
+					myDiv.append('br');
+					myDiv.append('br');
+					
+					var brune = myDiv.append('a')
+					.attr('href', 'salle_brune.html') ; 
+					brune.append('font')
+					.attr('color','#8A4B08')
+					.text(function(){
+						return d.brune ; 
+					});
+					myDiv.append('br');
+					myDiv.append('br');
+					
+					var orange = myDiv.append('a')
+					.attr('href', 'salle_orange.html') ; 
+					orange.append('font')
+					.attr('color','#FF8000')
+					.text(function(){
+						return d.orange ; 
+					});
+					myDiv.append('br');
+					myDiv.append('br');
+					
+					var rose = myDiv.append('a')
+					.attr('href', 'salle_rose.html') ; 
+					rose.append('font')
+					.attr('color','#FA58AC')
+					.text(function(){
+						return d.rose ; 
+					});
+					myDiv.append('br');
+					myDiv.append('br');
+					
+					var rouge = myDiv.append('a')
+					.attr('href', 'salle_rouge.html') ; 
+					rouge.append('font')
+					.attr('color','#FF0000')
+					.text(function(){
+						return d.rouge ; 
+					});
+					myDiv.append('br');
+					myDiv.append('br');
+					
+					
+					var verte = myDiv.append('a')
+					.attr('href', 'salle_verte.html') ; 
+					verte.append('font')
+					.attr('color','#3ADF00')
+					.text(function(){
+						return d.verte ; 
+					});
+					myDiv.append('br');
+					myDiv.append('br');
+					
+					var violette = myDiv.append('a')
+					.attr('href', 'salle_violette.html') ; 
+					violette.append('font')
+					.attr('color','#8A0886')
+					.text(function(){
+						return d.violette ; 
+					});
+					myDiv.append('br');
+					myDiv.append('br');
+					
+					
+					
+                  
+				});
+			})
+
+        </script>
+  
+    
+  
+
+   
+			<!-- Then Material JavaScript -->
+   <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('sw.js').then(function(registration) {
+                    // Registration was successful
+                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                }, function(err) {
+                    // registration failed :(
+                    console.log('ServiceWorker registration failed: ', err);
+                });
+            });
+        }
+    </script>
+	</body>
+
+</html>

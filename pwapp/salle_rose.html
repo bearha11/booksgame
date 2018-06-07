@@ -1,0 +1,115 @@
+<html>
+	<head>
+	<link rel="manifest" href="manifest.json">
+	<meta name="viewport" content="width=device-width, user-scalable=yes" />
+	  <meta charset="UTF-8">
+	  
+		<title>salle rose </title>
+		<link rel="manifest" href="manifest.json"> 
+ <script src="https://d3js.org/d3.v4.min.js"></script> 
+ <script  src="js/index.js"></script>
+	<script src="js/jquery-3.3.1.min.js"></script> 
+		
+		
+		
+<link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css'>
+
+		
+		
+		
+		
+		  <link rel="stylesheet" href="css/style-Copie.css">
+	</head>
+	<body>
+	<div id="dialog" class="dialog dialog-effect-in">
+  <div class="dialog-front">
+    <div class="dialog-content">
+      <form class="dialog-form" action="" method="POST">
+        <fieldset>
+          <legend> <img src="BooksGame_logo.jpg" alt="Smiley face"> </legend>
+		  
+		   <p  align="center" > <font color="#FA58AC">Les thèmes de la salle rose</font></p>
+		   
+		  <font color="#FA58AC">
+		 
+		 <div class = "livre" id="myDiv">
+		  
+		  
+		  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+		  
+		  
+		   <script>
+  var url="themerose.json"; 
+			d3.json(url, function(data) {
+				data.articles.forEach(function(d) {
+					var myDiv = d3.select('#myDiv');
+					myDiv.append('br');
+					var theme1 = myDiv.append('a')
+					.attr('href', 'livre_art.html') ; 
+					theme1.append('font')
+					.attr('color','#FA58AC')
+					.text(function(){
+						return d.theme1 ; 
+					});
+					myDiv.append('br');
+					myDiv.append('br');
+					
+					var theme2 = myDiv.append('a')
+					.attr('href', 'livre_art.html') ; 
+					theme2.append('font')
+					.attr('color','#FA58AC')
+					.text(function(){
+						return d.theme2 ; 
+					});
+					myDiv.append('br');
+					myDiv.append('br');
+					
+					var theme3 = myDiv.append('a')
+					.attr('href', 'livre_art.html') ; 
+					theme3.append('font')
+					.attr('color','#FA58AC')
+					.text(function(){
+						return d.theme3 ; 
+					});
+					myDiv.append('br');
+					myDiv.append('br');
+					
+					var theme4 = myDiv.append('a')
+					.attr('href', 'livre_art.html') ; 
+					theme4.append('font')
+					.attr('color','#FA58AC')
+					.text(function(){
+						return d.theme4 ; 
+					});
+					myDiv.append('br');
+					myDiv.append('br');
+					
+					
+  
+  	        });
+			})
+
+    </script>
+
+  
+
+    <script  src="js/index.js"></script>
+		  <!-- Then Material JavaScript -->
+   
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('sw.js').then(function(registration) {
+                    // Registration was successful
+                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                }, function(err) {
+                    // registration failed :(
+                    console.log('ServiceWorker registration failed: ', err);
+                });
+            });
+        }
+    </script>
+		  
+		  </body>
+
+</html>

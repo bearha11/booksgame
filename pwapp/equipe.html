@@ -1,0 +1,130 @@
+<html>
+
+	<head>
+	<link rel="manifest" href="manifest.json">
+	<meta name="viewport" content="width=device-width, user-scalable=yes" />
+	  <meta charset="UTF-8">
+	  
+		<title>equipe </title>
+		
+		
+		
+		
+		  <link rel='stylesheet prefetch' href='https://www.google.com/fonts#UsePlace:use/Collection:Roboto:400,300,100,500'>
+<link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='https://www.google.com/fonts#UsePlace:use/Collection:Roboto+Slab:400,700,300,100'>
+		
+		
+		
+		
+		  <link rel="stylesheet" href="css/style-Copie.css">
+		
+		    <link rel="stylesheet" href="css/styyle.css">
+	</head>
+	<body>
+	
+	<div id="dialog" class="dialog dialog-effect-in">
+  <div class="dialog-front">
+    <div class="dialog-content">
+      <form class="dialog-form" action="commencer_partie.html" method="POST">
+        <fieldset>
+          <legend> <img src="BooksGame_logo.jpg" alt="Smiley face"> </legend>
+		  
+		  <label> Voici la liste des personne connecter </label>
+	<p>
+			Christophe <button type="button" onclick="toggle_text();">inviter a jouer</button>
+			 <span id="span_txt"></span>
+			<script>
+function toggle_text() {
+  var span = document.getElementById("span_txt");
+  if(span.innerHTML != "") {
+    span.innerHTML = "";
+  } else {
+    span.innerHTML = "invitation envoyer";
+  }
+}
+		</script>
+	</p>
+	
+	<p>
+			Rabea <button type="button" onclick="toggle_text1();">inviter a jouer</button>
+			 <span id="span_txt1"></span>
+			<script>
+function toggle_text1() {
+  var span = document.getElementById("span_txt1");
+  if(span.innerHTML != "") {
+    span.innerHTML = "";
+  } else {
+    span.innerHTML = "invitation envoyer";
+  }
+}
+		</script>
+	</p>
+	
+	<p>
+			Jean <button type="button" onclick="toggle_text2();">inviter a jouer</button>
+			 <span id="span_txt2"></span>
+			<script>
+function toggle_text2() {
+  var span = document.getElementById("span_txt2");
+  if(span.innerHTML != "") {
+    span.innerHTML = "";
+  } else {
+    span.innerHTML = "invitation envoyer";
+  }
+}
+		</script>
+	</p>
+	
+	<p>
+			Amine <button type="button" onclick="toggle_text3();">inviter a jouer</button>
+			 <span id="span_txt3"></span>
+			<script>
+function toggle_text3() {
+  var span = document.getElementById("span_txt3");
+  if(span.innerHTML != "") {
+    span.innerHTML = "";
+  } else {
+    span.innerHTML = "invitation envoyer";
+  }
+}
+		</script>
+	</p>
+	
+	<p>
+			Nabil <button type="button" onclick="toggle_text4();">inviter a jouer</button>
+			 <span id="span_txt4"></span>
+			<script>
+function toggle_text4() {
+  var span = document.getElementById("span_txt4");
+  if(span.innerHTML != "") {
+    span.innerHTML = "";
+  } else {
+    span.innerHTML = "invitation envoyer";
+  }
+}
+		</script>
+	</p>
+		  <div>
+		<a href="commencer_partie.html" class="button">suivant </a>
+		  </div>
+		  <!-- Then Material JavaScript -->
+   
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('sw.js').then(function(registration) {
+                    // Registration was successful
+                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                }, function(err) {
+                    // registration failed :(
+                    console.log('ServiceWorker registration failed: ', err);
+                });
+            });
+        }
+    </script>
+		  </body>
+		  
+		  
+		  
+</html>
